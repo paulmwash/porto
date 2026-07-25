@@ -38,17 +38,17 @@ color:red;
 </div>
 </header>
 <h1 id="star">Reach me</h1>
-<form id="details">
+<form id="details" name="contact" method="POST" data-netlify="true">>
 <fieldset>
 <legend id="leg">Personal Details</legend>
 <label id="nan"  for="name">Name:</label>
-<input type="text" placeholder="John" required id="nam"><br/>
+<input name="name" type="text" placeholder="John" required id="nam"><br/>
 <label id="em"   for="email" >Email:</label>
-<input type="email" id="mal"  placeholder="example@gmail.com" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required><br/>
+<input name="email"  type="email" id="mal"  placeholder="example@gmail.com" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required><br/>
 <label id="lab" for="comment">Message:</label><br/>
 <textarea id="com" name="comment" rows="5" cols="30" placeholder="Message"></textarea><br/>
 <button id="clear-text" >Clear</button>
-<button id="sub" name="mit" type="submit">Submit</button>
+<button id="sub" name="mit" type="button">Submit</button>
 </fieldset>
 </form>
 <script>
