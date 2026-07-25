@@ -41,6 +41,7 @@ color:red;
 <form id="details" name="contact" method="POST" data-netlify="true">>
 <fieldset>
 <legend id="leg">Personal Details</legend>
+<input type="hidden" name="form-name" value="contact" />
 <label id="nan"  for="name">Name:</label>
 <input name="name" type="text" placeholder="John" required id="nam"><br/>
 <label id="em"   for="email" >Email:</label>
@@ -48,7 +49,7 @@ color:red;
 <label id="lab" for="comment">Message:</label><br/>
 <textarea id="com" name="comment" rows="5" cols="30" placeholder="Message"></textarea><br/>
 <button id="clear-text" >Clear</button>
-<button id="sub" name="mit" type="button">Submit</button>
+<button id="sub" name="mit" type="submit">Submit</button>
 </fieldset>
 </form>
 <script>
