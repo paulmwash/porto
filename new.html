@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+body{background-color:#0d1117;color:blue;}
+#sub:hover{
+color:#2ea043;
+background-color:#ffffff;
+}
+
+#sub:active{
+color:blue;
+}
+
+#clear-text{
+color:grey;
+}
+
+#clear-text:hover{
+color:brown;
+}
+
+#clear-text:active{
+color:red;
+}
+
+</style>
+<title>Launch</title>
+</head>
+<body>
+<header>
+<div class="porto">
+<nav>
+<a href="about.html">About</a>
+</nav>
+</div>
+</header>
+<h1 id="star">Reach me</h1>
+<form id="details">
+<fieldset>
+<legend id="leg">Personal Details</legend>
+<label id="nan"  for="name">Name:</label>
+<input type="text" placeholder="John" required id="nam"><br/>
+<label id="em"   for="email" >Email:</label>
+<input type="email" id="mal"  placeholder="example@gmail.com" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required><br/>
+<label id="lab" for="comment">Message:</label><br/>
+<textarea id="com" name="comment" rows="5" cols="30" placeholder="Message"></textarea><br/>
+<button id="clear-text" >Clear</button>
+<button id="sub" name="mit" type="submit">Submit</button>
+</fieldset>
+</form>
+<script>
+const St=document.querySelector("#star");
+St.style.color="green";
+
+const myForm=document.querySelector("#details");
+const Name=document.querySelector("#nan");
+const Email=document.querySelector("#em");
+const Comment=document.querySelector("#lab")
+const Clear=document.querySelector("#clear-text");
+//const Add=document.querySelector("#add-text");
+const Text=document.querySelector("#com");
+const ask=document.querySelector("#sub");
+const Leg=document.querySelector("#leg");
+const inName=document.querySelector("#nam");
+const inMal=document.querySelector("#mal");
+
+
+Name.style.color="#8b949e";
+Email.style.color="#8b949e";
+Comment.style.color="#8b949e";
+Leg.style.color="#00C853";
+//ask.style.color="#8B5CF6";
+ask.style.cursor="pointer";
+ask.style.borderRadius="9999px";
+myForm.style.backgroundColor="#111827";
+inName.style.color="purple";
+inMal.style.color="purple";
+Clear.style.cursor="pointer";
+Clear.style.borderRadius="9999px";
+Text.style.color="purple";
+
+/**Name.addEventListener("click",()=>{
+alert(nn);
+});
+**/
+
+Clear.addEventListener("click",()=>{
+myForm.reset();
+});
+
+
+/**Add.addEventListener("click",(e)=>{
+e.preventDefault();
+Text.value="Paul Njoroge";
+});
+**/
+
+/**ask.addEventListener("click",()=>{
+alert("Are you sure you want to submit");
+});
+**/
+</script>
+</body>
+</html>
